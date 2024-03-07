@@ -1,5 +1,7 @@
 Manually added documentation
-----------------------------
+============================
+
+Some documentation not using docstrings, purely handwritten.
 
 .. py:function:: enumerate(sequence[, start=0])
 

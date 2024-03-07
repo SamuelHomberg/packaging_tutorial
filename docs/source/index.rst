@@ -7,6 +7,11 @@
 Welcome to example_package_samuelhomberg's documentation!
 =========================================================
 
+An example to learn how to write/publish python documentation. 
+
+* `GitHub <https://github.com/SamuelHomberg/packaging_tutorial>`_
+* `Personal Website <https://samuelhomberg.github.io/>`_
+
 
 
 Contents
@@ -14,17 +19,10 @@ Contents
 .. toctree::
    :maxdepth: 2
 
-   autodoc_example
-   manual_doc_example
-   example_package_samuelhomberg
-   autodoc_example
-   modules
+   About <about>
+   Installation <install>
+   Get started <get_started>
+   Documentation <documentation>
+   Manual documentation <manual_documentation>
 
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
