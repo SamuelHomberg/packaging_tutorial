@@ -17,5 +17,13 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
+[project.optional-dependencies]
+dev = ["ruff"]
+docs = [
+    "sphinx_rtd_theme",
+    "sphinx",
+]
+test = ["pre-commit", "pytest", "pytest-cov"]
+
 [project.urls]
 Homepage = "https://samuelhomberg.github.io/"
