@@ -24,5 +24,5 @@ Contents
    Get started <get_started>
    Documentation <documentation>
    Manual documentation <manual_documentation>
-   GitHub <https://github.com/SamuelHomberg/packaging_tutorial>
-   Personal Website <https://samuelhomberg.github.io/>
+   GitHub ⧉ <https://github.com/SamuelHomberg/packaging_tutorial>
+   Personal Website ⧉ <https://samuelhomberg.github.io/>
