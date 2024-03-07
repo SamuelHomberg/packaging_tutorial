@@ -17,12 +17,12 @@ An example to learn how to write/publish python documentation.
 Contents
 ========
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    About <about>
    Installation <install>
    Get started <get_started>
    Documentation <documentation>
    Manual documentation <manual_documentation>
-
-
+   GitHub <https://github.com/SamuelHomberg/packaging_tutorial>
+   Personal Website <https://samuelhomberg.github.io/>
