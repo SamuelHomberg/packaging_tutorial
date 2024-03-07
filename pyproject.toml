@@ -25,5 +25,9 @@ docs = [
 ]
 test = ["pre-commit", "pytest", "pytest-cov"]
 
+[tool.pytest.ini_options]
+testpaths = ["test"]
+pythonpath = ["src"]
+
 [project.urls]
 Homepage = "https://samuelhomberg.github.io/"
