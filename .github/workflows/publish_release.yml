@@ -28,7 +28,7 @@ jobs:
         name: python-package-distributions
         path: dist/
     - name: Get version for github release
-      run: python get_version
+      run: python get_version.py
     - name: Store the version
       uses: actions/upload-artifact@v4
       with:
