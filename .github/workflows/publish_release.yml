@@ -36,7 +36,7 @@ jobs:
 
     environment:
       name: testpypi
-      url: https://test.pypi.org/p/example_package_samuelhomberg2
+      url: https://test.pypi.org/p/example_package_samuelhomberg
 
     permissions:
       id-token: write  # IMPORTANT: mandatory for trusted publishing
