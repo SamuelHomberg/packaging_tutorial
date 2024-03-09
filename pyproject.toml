@@ -1,14 +1,13 @@
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
 
 [project]
 name = "example_package_samuelhomberg"
-version = "0.1.0"
+dynamic = ["version", "description"]
 authors = [
   { name="Samuel K. R. Homberg", email="samuel.homberg@uni-muenster.de" },
 ]
-description = "A small example package"
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
