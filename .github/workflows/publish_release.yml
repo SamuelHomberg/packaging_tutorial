@@ -27,6 +27,13 @@ jobs:
       with:
         name: python-package-distributions
         path: dist/
+    - name: Get version for github release
+      run: python get_version
+    - name: Store the version
+      uses: actions/upload-artifact@v4
+      with:
+        name: version.semver
+        path: ./
 
   publish-to-testpypi:
     name: Publish Python 🐍 distribution 📦 to TestPyPI
@@ -76,14 +83,17 @@ jobs:
         inputs: >-
           ./dist/*.tar.gz
           ./dist/*.whl
+    - name: Get version for release
+      uses: actions/download-artifact@v4
+      with:
+        name: version.semver
+        path: ./
     - name: Create GitHub Release
       env:
         GITHUB_TOKEN: ${{ github.token }}
-      run: >-
-        gh release create
-        '${{ github.ref_name }}'
-        --repo '${{ github.repository }}'
-        --notes ""
+      run: |
+        VERSION=$(cat ./version.semver)
+        gh release create $VERSION --repo '${{ github.repository }}' --notes ""
     - name: Upload artifact signatures to GitHub Release
       env:
         GITHUB_TOKEN: ${{ github.token }}
@@ -92,5 +102,5 @@ jobs:
       # sigstore-produced signatures and certificates.
       run: >-
         gh release upload
-        '${{ github.ref_name }}' dist/**
+        $VERSION dist/**
         --repo '${{ github.repository }}'
