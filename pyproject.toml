@@ -29,4 +29,6 @@ testpaths = ["test"]
 pythonpath = ["src"]
 
 [project.urls]
-Homepage = "https://samuelhomberg.github.io/"
+Source = "https://github.com/SamuelHomberg/packaging_tutorial"
+Documentation = "https://example-package-samuelhomberg.readthedocs.io/en/latest/"
+Author Homepage = "https://samuelhomberg.github.io/"
