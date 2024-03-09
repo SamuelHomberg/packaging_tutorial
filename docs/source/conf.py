@@ -3,11 +3,13 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath('../../src'))
+import example_package_samuelhomberg
+version = example_package_samuelhomberg.__version__ 
 
 project = 'example_package_samuelhomberg'
 copyright = '2024, Samuel Homberg'
-author = 'Samuel Homberg'
-release = '0.1.0'
+author = 'Samuel K. R. Homberg'
+release = version
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
