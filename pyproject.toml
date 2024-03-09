@@ -31,4 +31,4 @@ pythonpath = ["src"]
 [project.urls]
 Source = "https://github.com/SamuelHomberg/packaging_tutorial"
 Documentation = "https://example-package-samuelhomberg.readthedocs.io/en/latest/"
-Author Homepage = "https://samuelhomberg.github.io/"
+'Author Homepage' = "https://samuelhomberg.github.io/"
